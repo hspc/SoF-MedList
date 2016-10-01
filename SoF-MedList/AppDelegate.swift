@@ -14,20 +14,44 @@ import SMART
 class AppDelegate: UIResponder, UIApplicationDelegate
 {
 	var window: UIWindow?
-	
-	lazy var smart: Client = Client(
-		baseURL: "https://fhir-api-dstu2.smarthealthit.org",
-		settings: [
-			"client_id": "my_mobile_app",
-			"client_name": "SMART on FHIR iOS Medication Sample App",
-			"redirect": "smartapp://callback",
-			"logo_uri": "https://avatars1.githubusercontent.com/u/7401080",
-//			"keychain": false,
-			"verbose": true,
-		]
-	)
-	
+
+    var hspcSandbox = Client(
+        baseURL: "https://persona-api.hspconsortium.org/hspc/data",
+        settings: [
+            "client_id": "3cb9c849-3c07-4d52-869b-a38f4ce86402",
+            "redirect": "smartapp://callback",
+            "logo_uri": "https://avatars1.githubusercontent.com/u/7401080",
+            "keychain": false,
+            "verbose": true,
+            ]
+    )
+    
+    var smartSandbox = Client(
+        baseURL: "https://fhir-api-dstu2.smarthealthit.org",
+        settings: [
+            //			"client_id": "my_mobile_app",
+            "client_name": "SMART on FHIR iOS Medication Sample App",
+            "redirect": "smartapp://callback",
+            "logo_uri": "https://avatars1.githubusercontent.com/u/7401080",
+            //			"keychain": false,
+            "verbose": true,
+            ]
+    )
+    
+    var smart = Client(
+        baseURL: "https://fhir-api-dstu2.smarthealthit.org",
+        settings: [
+            //			"client_id": "my_mobile_app",
+            "client_name": "SMART on FHIR iOS Medication Sample App",
+            "redirect": "smartapp://callback",
+            "logo_uri": "https://avatars1.githubusercontent.com/u/7401080",
+            //			"keychain": false,
+            "verbose": true,
+            ]
+    )
+    
 	func application(_ app: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]? = nil) -> Bool {
+        
 			let splitViewController = self.window!.rootViewController as! UISplitViewController
 			let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.endIndex-1] as! UINavigationController
 			splitViewController.delegate = navigationController.topViewController as! DetailViewController

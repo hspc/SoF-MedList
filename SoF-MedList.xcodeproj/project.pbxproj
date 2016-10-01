@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32520B931DA02CD800EB4C0F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32520B921DA02CD800EB4C0F /* SettingsController.swift */; };
 		EE17790219D0A9E200B5826B /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE17790119D0A9E200B5826B /* Launch.storyboard */; };
 		EE19A6831B47EC4000A406FD /* SMART.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9EE7031AC49C3D002D8B49 /* SMART.framework */; };
 		EE19A6841B47EC4000A406FD /* SMART.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE9EE7031AC49C3D002D8B49 /* SMART.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -77,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		32520B921DA02CD800EB4C0F /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		EE17790119D0A9E200B5826B /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		EE43B1D819547E410017679A /* SoF-MedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoF-MedList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE43B1DC19547E410017679A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		EE43B1DA19547E410017679A /* SoF-MedList */ = {
 			isa = PBXGroup;
 			children = (
+				32520B921DA02CD800EB4C0F /* SettingsController.swift */,
 				EE43B1DD19547E410017679A /* AppDelegate.swift */,
 				EE43B1DF19547E410017679A /* MasterViewController.swift */,
 				EE43B1E119547E410017679A /* DetailViewController.swift */,
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32520B931DA02CD800EB4C0F /* SettingsController.swift in Sources */,
 				EE43B1E219547E410017679A /* DetailViewController.swift in Sources */,
 				EE43B1E019547E410017679A /* MasterViewController.swift in Sources */,
 				EE43B1DE19547E410017679A /* AppDelegate.swift in Sources */,
